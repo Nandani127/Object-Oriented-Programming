@@ -1,0 +1,13 @@
+LIBRARY MANAGEMENT SYSTEM
+
+How does the system work?
+o Every patron has a uniue numerical id.
+o Every book has a uniue accession number.
+
+o Check Out - A patron can check out upto 3 books at any time.
+
+o Claim - If patron X has not already checked out 3 books, he/she can claim a book checked out by patron Y. 
+                When Y returns the book it is held for X and cannot be lent to others.
+
+o Return - A patron can return a book checked out by her/him at any time.
+                  No late charges! 
