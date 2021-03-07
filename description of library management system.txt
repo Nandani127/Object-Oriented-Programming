@@ -1,5 +1,6 @@
 LIBRARY MANAGEMENT SYSTEM
 
+We want to design a book check out/return/claim management system of a small library.
 How does the system work?
 o Every patron has a uniue numerical id.
 o Every book has a uniue accession number.
