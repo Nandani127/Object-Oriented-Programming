@@ -12,3 +12,33 @@ o Claim - If patron X has not already checked out 3 books, he/she can claim a bo
 
 o Return - A patron can return a book checked out by her/him at any time.
                   No late charges! 
+
+//Function for checking out book
+currPatron (of type Patron) to check out currBook (of type Book)
+• Check if currPatron has already checked out 3 books
+   - If so, print appropriate message and return
+   - Otherwise, 
+      * If currBook is already checked out, print appropriate message and return
+      * Otherwise, if currBook not already claimed by a different patron
+         - Increment value of currPatron.numBooksChkdOut
+         - Set currBook.checkOutStatus of book to true
+currPatron (of type Patron) to claim currBook (of type Book)
+• Check if currPatron has already checked out 3 books or already has a 
+pending claim
+- If so, print appropriate message and return
+- Otherwise, 
+* If currBook is not checked out by anybody, print appropriate
+message and return
+* Otherwise, if currBook not already claimed by a different patron
+- Store currBook.accNum in currPatron.claimdBookAccNum
+- Store currPatron.uniqueId in currBook.claimantId
+
+//Function for claiming book
+currPatron (of type Patron) to claim currBook (of type Book)
+• Check if currPatron has already checked out 3 books or already has a pending claim
+   - If so, print appropriate message and return
+   - Otherwise, 
+      * If currBook is not checked out by anybody, print appropriate message and return
+      * Otherwise, if currBook not already claimed by a different patron
+         - Store currBook.accNum in currPatron.claimdBookAccNum
+         - Store currPatron.uniqueId in currBook.claimantId
