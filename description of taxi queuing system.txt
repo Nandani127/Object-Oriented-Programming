@@ -1,0 +1,9 @@
+A taxi queuing system
+
+• Taxis at a train station arrive and depart at different times
+• We want to maintain a queue of taxis at the train station
+• The queue implements a first-in-first-out policy for taxis
+    • The taxi that came to the station earliest (among all waiting taxis) is at the “front” of the queue.
+    • The taxi at the “front” of the queue is the next one to be dispatched.
+    • The latest taxi to arrive at the station joins the queue at its “end”.
+    • No taxi leaves the queue once it joins at the “end” until it reaches the “front”, and is dispatched.
